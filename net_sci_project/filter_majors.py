@@ -10,7 +10,7 @@ def make_major_dict(filename,sheetname,first,second,third):
 	majors = dict()
 	for i in range(1,p.max_row+1):
 		
-		maj_outf = open("outputs/"+inf[first+str(int(i))].value+".txt","a+")
+		maj_outf = open("majors/"+inf[first+str(int(i))].value+".txt","a+")
 		
 		if inf[second+str(int(i))].value not in majors.keys():
 			majors[inf[second+str(int(i))].value] = set()
