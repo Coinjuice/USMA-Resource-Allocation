@@ -15,12 +15,14 @@ def make_major_dict(filename,sheetname,first,second,third):
 		if inf[second+str(int(i))].value not in majors.keys():
 			majors[inf[second+str(int(i))].value] = set()
 		majors[inf[second+str(int(i))].value].add(inf[third+str(int(i))].value)
+		
 		edge_list = []
 		for k in majors.keys():
 			for v in majors[k]:
-				edge_list=[str(k.replace(" ","")+';'+v.replace(" ",''))]
+				edge_list+=[str(k.replace(" ","")+';'+v.replace(" ",''))]
 		
-		to_insert=str(edge_list).replace(" ","").replace("'","").replace("[","").replace("]","").replace(",","\n")
+		to_insert=str(edge_list).replace(" ","").replace("'","").replace("[","").replace("]","").replace(",","\n").replace("crse_nbr;rltd_crse_nbr\n","")
+		
 		maj_outf.write(to_insert+"\n")
 		maj_outf.close()
 	return majors
