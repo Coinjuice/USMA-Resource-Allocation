@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+#./filter_majors.py fos_maj_data.xlsx fos B A D
 import openpyxl as px
 import sys
 import csv
