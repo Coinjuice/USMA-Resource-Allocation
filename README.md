@@ -1,2 +1,6 @@
-# USMA_Mapping
-This Project is to map the USMA corriculum by correlating prerequisite classes to each individual class
+# United States Military Academy curriculum analysis and resource allocation recommendation
+
+The United States Military Academy has an extremly small personnel to student ratio. This allows for closer interaction and an increased learning experience. The purpose of this project is to analyze the current curriculum and improve on this system to pinpoint areas needing support. This project is also used to determine outlying courses that may need to be considered for removal from the curriculum.
+
+Each course is listed in a PDF document that required scrubbing into an xlsx document. From this xlsx file all courses (nodes) where correlated by their prerequisites (edges). In order to analyze this data, a program for network science analysis was used to determine which classes were of more importance. Many different mathmatical methods were applied to this network and from these results conclusions could be drawn. These networks have been made for each major, department, along wit the entire course curriculum. This allows for not only the dean but also department heads and students to visualize for theirself which classes to focus on by the weight of their importance. However, along with importance of clases, their are also classes that need justification for remaining in the curriculum. Many courses do not have significant correlation to any major pathway. Even if these courses are electives, it still must be considered whether or not these courses should be replaced by electives more inline with a majors' focus.
+
